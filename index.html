@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break-even CPC Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="note">Values update automatically when inputs are entered or re-entered.</p>
+
+    <!-- Break-even CPC Calculator -->
+    <h1>Break-even CPC Calculator</h1>
+    <div class="input-row">
+      <label for="convRate">Conversion Rate (%):</label>
+      <input type="text" id="convRate" placeholder="Enter Conversion Rate">
+    </div>
+    <div class="input-row">
+      <label for="profitPerConv">Profit Per Conversion ($):</label>
+      <input type="text" id="profitPerConv" placeholder="Enter Profit Per Conversion">
+    </div>
+    <div class="input-row">
+      <label for="breakEvenCPC">Break-even CPC ($):</label>
+      <input type="text" id="breakEvenCPC" disabled placeholder="Break-even CPC will be calculated">
+    </div>
+    <div class="results">
+      <p id="cpcResultText">Your Break-even CPC is …</p>
+    </div>
+    <button id="resetCPCBtn">Reset CPC Calculator</button>
+
+    <!-- Profit Per Conversion Calculator -->
+    <h1>Profit Per Conversion Calculator</h1>
+    <div class="input-row">
+      <label for="breakEvenCPCProfit">Break-even CPC ($):</label>
+      <input type="text" id="breakEvenCPCProfit" placeholder="Enter Break-even CPC">
+    </div>
+    <div class="input-row">
+      <label for="convRateProfit">Conversion Rate (%):</label>
+      <input type="text" id="convRateProfit" placeholder="Enter Conversion Rate">
+    </div>
+    <div class="input-row">
+      <label for="profitPerConvResult">Profit Per Conversion ($):</label>
+      <input type="text" id="profitPerConvResult" disabled placeholder="Profit Per Conversion will be calculated">
+    </div>
+    <div class="results">
+      <p id="profitResultText">Your Profit Per Conversion is …</p>
+    </div>
+    <button id="resetProfitBtn">Reset Profit Calculator</button>
+
+    <!-- Conversion Rate Calculator -->
+    <h1>Conversion Rate Calculator</h1>
+    <div class="input-row">
+      <label for="breakEvenCPCConv">Break-even CPC ($):</label>
+      <input type="text" id="breakEvenCPCConv" placeholder="Enter Break-even CPC">
+    </div>
+    <div class="input-row">
+      <label for="profitPerConvConv">Profit Per Conversion ($):</label>
+      <input type="text" id="profitPerConvConv" placeholder="Enter Profit Per Conversion">
+    </div>
+    <div class="input-row">
+      <label for="convRateResult">Conversion Rate (%):</label>
+      <input type="text" id="convRateResult" disabled placeholder="Conversion Rate will be calculated">
+    </div>
+    <div class="results">
+      <p id="convRateResultText">Your Conversion Rate is …</p>
+    </div>
+    <button id="resetConvRateBtn">Reset Conversion Rate Calculator</button>
+
+    <!-- Reset All Button -->
+    <div class="reset-all-container">
+      <button id="resetAllBtn" class="reset-all">Reset All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
