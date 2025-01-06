@@ -125,4 +125,27 @@
   .cpc-info strong {
     color: #333; /* Darker color for emphasized text */
   }
+
+@media (min-width: 1024px) {
+  .container {
+    width: 70%; /* Expand container width for large PC screens */
+    max-width: 1000px; /* Wider max width for large displays */
+  }
+
+  h1 {
+    font-size: 24px; /* Slightly larger headers */
+  }
+
+  label {
+    font-size: 16px; /* Improved readability */
+  }
+
+  input {
+    font-size: 15px; /* Adjust input font size */
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
   
