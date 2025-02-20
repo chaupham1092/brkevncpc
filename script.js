@@ -1,7 +1,7 @@
 // Add event listeners to Calculate buttons
 document.getElementById('calculateCPCBtn').addEventListener('click', calculateBreakEvenCPC);
 document.getElementById('calculateProfitBtn').addEventListener('click', calculateProfitPerConversion);
-document.getElementById('calculateImpressionsBtn').addEventListener('click', calculateConversionRate);
+document.getElementById('calculateConvRateBtn').addEventListener('click', calculateConversionRate);
 
 
 // Function to calculate Break-even CPC
